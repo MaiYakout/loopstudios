@@ -1,0 +1,122 @@
+/*****
+font-family:"Alata","Josefin Sans";
+White: hsl(0, 0%, 100%)
+Black: hsl(0, 0%, 0%)
+Dark Gray: hsl(0, 0%, 55%)
+Very Dark Gray: hsl(0, 0%, 41%)
+******/
+body{
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+}
+/*Header Style*/
+.header{
+    background-image: url('../images/desktop/image-hero.jpg');
+    height:100vh;
+}
+.header .navbar-dark .navbar-brand{
+    color:white;
+    font-size: 2.85rem;
+}
+.header .navbar-dark .navbar-nav .nav-link{
+    color:white;
+    font-weight: bold;
+    position: relative;
+}
+.header .navbar-dark .navbar-nav .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+.header p{
+    border-color:white;
+    color:white;
+    font-size: 3.5rem;
+}
+/* leader */
+.leader{
+    margin:6rem auto;
+}
+.leader img{
+    max-width: 70%;
+}
+.leader-text{
+    max-width: 560px;
+    padding: 5rem 5rem 0 5rem;
+}
+.leader-text p{
+    color:hsl(0, 0%, 55%);
+    font-weight: bold;
+}
+@media (max-width: 991.98px) { 
+    .leader{
+        position: static !important;
+    }
+    .leader img{
+        max-width: 100%;
+    }
+    .leader-text{
+        max-width:100%;
+        position:static !important;
+    }
+}
+/*creation*/
+.creation button{
+    padding:0.5rem 3rem;
+}
+.creation button:hover{
+    color: white;
+    background-color: black;
+    
+}
+
+.creation-img p{
+    color:white
+}
+.creation-img .overlay{
+    background-color: #00000069;
+    width: 99%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.creation-img a:hover p{
+    color:black
+}
+.creation-img a:hover .overlay{
+    background-color: #ffffff99;
+}
+@media (max-width: 771px){
+    .creation-img .creation-content{
+        margin-bottom: 10px;
+    }
+}
+/*Footer*/
+.footer{
+    color: white;
+    background-color: black;
+}
+.footer h3{
+    font-weight: bold;
+}
+.footer ul li a{
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+.footer ul li a:hover::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: -7px;
+    border: 1px solid white;
+}
+.footer p{
+    color:hsl(0, 0%, 55%)
+}
